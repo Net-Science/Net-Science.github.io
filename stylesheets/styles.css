@@ -55,7 +55,7 @@ a:hover small {
 }
 
 .wrapper {
-  width:1000px;
+  width:1050px;
   margin:0 auto;
 }
 
@@ -100,11 +100,11 @@ th {
 }
 
 img {
-  max-width:100%;
+  max-width:90%;
 }
 
 header {
-  width:270px;
+  width:320px;
   float:left;
   position:fixed;
   -webkit-font-smoothing:subpixel-antialiased;
@@ -190,7 +190,7 @@ footer {
   width:270px;
   float:left;
   position:fixed;
-  bottom:50px;
+  bottom:20px;
   -webkit-font-smoothing:subpixel-antialiased;
 }
 
