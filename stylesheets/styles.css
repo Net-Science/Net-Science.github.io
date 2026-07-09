@@ -99,6 +99,16 @@ th {
   color:#444;
 }
 
+.program-table th,
+.program-table td {
+  vertical-align:top;
+}
+
+.program-table th:nth-child(3),
+.program-table td:nth-child(3) {
+  display:none;
+}
+
 img {
   max-width:90%;
 }
@@ -232,6 +242,54 @@ footer {
 @media print, screen and (max-width: 720px) {
   body {
     word-wrap:break-word;
+    overflow-wrap:anywhere;
+  }
+
+  header,
+  section {
+    max-width:100%;
+    overflow-x:hidden;
+  }
+
+  .program-table,
+  .program-table thead,
+  .program-table tbody,
+  .program-table tr,
+  .program-table th,
+  .program-table td {
+    display:block;
+    width:100%;
+    box-sizing:border-box;
+  }
+
+  .program-table thead,
+  .program-table td:nth-child(3) {
+    display:none;
+  }
+
+  .program-table tr {
+    padding:10px 0;
+    border-bottom:1px solid #e5e5e5;
+  }
+
+  .program-table td {
+    padding:4px 0;
+    border-bottom:0;
+  }
+
+  .program-table td::before {
+    display:block;
+    margin-bottom:2px;
+    color:#444;
+    font-weight:500;
+  }
+
+  .program-table td:nth-child(1)::before {
+    content:"Day/time";
+  }
+
+  .program-table td:nth-child(2)::before {
+    content:"Topic";
   }
 
   header {
