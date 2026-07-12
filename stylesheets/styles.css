@@ -104,9 +104,19 @@ th {
   vertical-align:top;
 }
 
+.program-table th:nth-child(1),
+.program-table td:nth-child(1) {
+  width:16%;
+}
+
+.program-table th:nth-child(2),
+.program-table td:nth-child(2) {
+  width:43%;
+}
+
 .program-table th:nth-child(3),
 .program-table td:nth-child(3) {
-  display:none;
+  width:41%;
 }
 
 img {
@@ -262,8 +272,7 @@ footer {
     box-sizing:border-box;
   }
 
-  .program-table thead,
-  .program-table td:nth-child(3) {
+  .program-table thead {
     display:none;
   }
 
@@ -290,6 +299,10 @@ footer {
 
   .program-table td:nth-child(2)::before {
     content:"Topic";
+  }
+
+  .program-table td:nth-child(3)::before {
+    content:"Materials";
   }
 
   header {
